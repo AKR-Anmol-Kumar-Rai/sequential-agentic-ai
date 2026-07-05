@@ -230,7 +230,7 @@ if query or generate_clicked:
 
         # Documentation Agent
         with st.spinner("Generating Documentation..."):
-            docs_output = docs_agent.run(query)
+            docs_output = docs_agent.run(planning_output.content)
 
         st.markdown(
             '<div class="section-title">Documentation Agent</div>',
